@@ -1,0 +1,59 @@
+.comics {
+  background-color: rgb(32, 32, 32);
+  flex: 1;
+}
+
+.comics_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 3rem 10rem;
+}
+
+.comics_titulo {
+  color: white;
+  margin: 0;
+}
+
+.comics_input {
+  display: flex;
+}
+
+.comics_name_input {
+  width: 70%;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 1px 0px 1px 5px;
+}
+
+.comics_select {
+  width: 30%;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+.comics_noresultado {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+}
+
+.comics_grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+
+  //grid-template-columns: 1;
+  @media screen and (min-width:768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  @media screen and (min-width:992px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}

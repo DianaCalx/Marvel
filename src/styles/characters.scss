@@ -1,0 +1,63 @@
+.characters {
+  background-color: rgb(32, 32, 32);
+  flex: 1;
+}
+
+.container_characters {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 3rem 10rem;
+}
+
+.characters_titulo {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+
+}
+
+.characters_inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.character_input_search {
+  width: 40%;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 1px 0px 1px 5px;
+}
+
+.character_select_comic,
+.character_select_story {
+  width: 30%;
+  background-color: black;
+  color: white
+}
+
+.characters_grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+
+  //grid-template-columns: 1;
+  @media screen and (min-width:768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  @media screen and (min-width:992px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+.character_noresultado {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+}

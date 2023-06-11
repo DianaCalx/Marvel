@@ -1,0 +1,96 @@
+.container_character {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 3rem 10rem;
+}
+
+.character_screen {
+  background-color: rgb(32, 32, 32);
+  flex: 1;
+}
+
+.character_loading {
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.character_grid {
+  padding: 2rem;
+  display: grid;
+  background-color: #2d3436;
+  border-radius: 5px;
+
+  @media screen and (min-width:768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.character_imagen {
+  width: 100%;
+  height: 40rem;
+  color: white;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 5px solid black;
+
+}
+
+.character_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.character_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.character_nm {
+  color: white;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.button {
+  border-radius: 5px;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.posistion_button {
+  position: relative;
+}
+
+.character_book-icon,
+.character_eye-icon {
+  margin-right: 10px;
+  color: white;
+}
+
+.character_list_comics,
+.character_list_stories {
+  background-color: #2d3436;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 1rem 2rem 3rem 2rem;
+  color: white;
+}
+
+.character_stories,
+.character_comics {
+  margin: 0;
+}
